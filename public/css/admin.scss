@@ -1,0 +1,560 @@
+body {
+    background-color: #EEEEEE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+// HEADER 
+
+header {
+    background-color: #1D1D1F;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+
+    h1 {
+        margin: 0;
+        color: #838282;
+        font-weight: inherit;
+        position: relative;
+        left: 5%;
+        bottom: -25%;
+        width: fit-content;
+    }
+
+    a {
+
+        position: relative;
+        left: 44%;
+        top: -46%;
+    }
+}
+
+// MAIN 
+#app {
+    padding-top: 100px;
+
+    .menu_accueil {
+
+        display: flex;
+        justify-content: center;
+
+        .erreur {
+            position: absolute;
+            z-index: 100;
+            top: 72%;
+            color: #eee;
+        }
+
+        .formulaire {
+            width: 930px;
+            height: 500px;
+            position: relative;
+            border: 10px solid #EAC509;
+            display: flex;
+            margin: 60px;
+            background-color: #1D1D1F;
+
+            .erreur_conn {
+                position: absolute;
+                z-index: 100;
+                top: 85%;
+                color: #eee;
+                left: 8%;
+            }
+
+            h2 {
+                margin: 0;
+                color: #EEEEEE;
+                position: relative;
+                top: 21%;
+                left: 22%;
+
+            }
+
+            h2::after {
+                content: "";
+                width: 84px;
+                height: 2px;
+                background-color: #EEEEEE;
+                position: absolute;
+                top: 33px;
+                left: 0;
+            }
+
+            .titre-admin {
+                position: absolute;
+                height: fit-content;
+                top: 12%;
+                left: 9%;
+            }
+
+            .form {
+                position: relative;
+                top: 34%;
+                width: 363px;
+                left: 22%;
+
+                input {
+
+                    padding: 20px 50px 20px 15px;
+                    border-radius: inherit;
+                    background: #fbf7ea3d;
+                    border: none;
+                    color: #aaa9a9;
+                }
+
+                .courriel,
+                .mdp {
+                    width: 270px;
+                }
+
+                .mdp {
+                    margin-top: 21px;
+                }
+
+                .submit {
+                    margin-top: 8px;
+
+                    input {
+                        position: relative;
+                        top: 20px;
+                        background: none;
+                        color: #EAC509;
+                        border: 3px solid #EAC509;
+                        font-size: larger;
+                        padding: 7px 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .submit input:hover {
+                    background: #EAC509;
+                    color: #1D1D1F;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            .liens {
+                position: relative;
+                top: 35%;
+                left: 20%;
+                display: flex;
+                flex-wrap: wrap;
+                width: 645px;
+                height: fit-content;
+
+                a {
+                    width: 30%;
+                    border: 5px solid #EAC509;
+                    padding: 10px 20px;
+                    color: #EAC509;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 3%;
+                    margin: 20px;
+                }
+
+                a:hover {
+                    background: #EAC509;
+                    color: #1D1D1F;
+                    text-decoration: underline;
+                }
+            }
+
+            img {
+
+                position: relative;
+                left: 217px;
+            }
+        }
+    }
+
+
+    #ajout_util {
+        font-size: x-large;
+        height: 70vh;
+
+        margin-top: 70px;
+
+        .form_ajout {
+            margin: 20px;
+
+            label {
+                display: block;
+
+                input {
+                    width: 220px;
+                }
+            }
+        }
+
+        .submit {
+            margin-top: 50px;
+
+            input {
+                width: 180px;
+                border: 5px solid #EAC509;
+                padding: 13px 20px;
+                color: #EAC509;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3%;
+                margin: 20px;
+            }
+
+            input:hover {
+                background: #EAC509;
+                color: #1D1D1F;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        .retour {
+            margin: 20px;
+
+            a {
+
+                text-decoration: none;
+                color: #1D1D1F;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #modif_util {
+        margin: 20px;
+        font-size: x-large;
+        height: 70vh;
+
+        .retour {
+            margin-top: 70px;
+
+            a {
+
+                text-decoration: none;
+                color: #1D1D1F;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #ajout_menu {
+        text-transform: uppercase;
+        margin: 20px;
+        font-size: x-large;
+
+        .form_ajout_menu {
+
+            display: flex;
+            justify-content: space-around;
+
+            label {
+                display: block;
+
+                input {
+                    width: 220px;
+                }
+            }
+
+            .submit {
+                margin-top: 50px;
+
+                input {
+                    width: 180px;
+                    border: 5px solid #EAC509;
+                    padding: 13px 20px;
+                    color: #EAC509;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 3%;
+
+                }
+
+                input:hover {
+                    cursor: pointer;
+                    background: #EAC509;
+                    color: #1D1D1F;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .retour {
+            margin-top: 70px;
+            margin-left: 20px;
+
+            a {
+
+                text-decoration: none;
+                color: #1D1D1F;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #modif_menu {
+        font-size: larger;
+
+        .form_modif_menu {
+
+            display: flex;
+
+            padding: 65px;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .retour {
+            font-size: x-large;
+            margin-top: 70px;
+            margin-left: 75px;
+
+            a {
+
+                text-decoration: none;
+                color: #1D1D1F;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .modif_util_form {
+        font-size: x-large;
+        margin-top: 70px;
+        margin-left: 50px;
+
+        .form {
+
+            label {
+                display: block;
+            }
+
+            input {
+                width: 220px;
+            }
+
+        }
+
+        .submit {
+            margin-top: 50px;
+            width: fit-content;
+
+            input {
+                width: 130px;
+                border: 5px solid #EAC509;
+                padding: 13px 20px;
+                color: #EAC509;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3%;
+
+            }
+
+            input:hover {
+                cursor: pointer;
+                background: #EAC509;
+                color: #1D1D1F;
+                text-decoration: underline;
+            }
+        }
+
+        .retour {
+            font-size: x-large;
+            margin-top: 70px;
+            margin-left: 75px;
+
+            a {
+
+                text-decoration: none;
+                color: #1D1D1F;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .modif_cat_form {
+        font-size: x-large;
+        margin-top: 70px;
+        margin-left: 50px;
+
+        .form {
+            .nom_modif {
+
+                label {
+                    display: block;
+                }
+
+                input {
+                    width: 220px;
+                }
+            }
+        }
+
+        .submit {
+            margin-top: 50px;
+            width: fit-content;
+
+            input {
+                width: 130px;
+                border: 5px solid #EAC509;
+                padding: 13px 20px;
+                color: #EAC509;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3%;
+
+            }
+
+            input:hover {
+                cursor: pointer;
+                background: #EAC509;
+                color: #1D1D1F;
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .modif_plat_form {
+        font-size: x-large;
+        margin-top: 70px;
+        margin-left: 50px;
+
+        .form {
+
+            label {
+                display: block;
+            }
+
+            input {
+                width: 220px;
+            }
+
+        }
+
+        .submit {
+            margin-top: 50px;
+            width: fit-content;
+
+            input {
+                width: 130px;
+                border: 5px solid #EAC509;
+                padding: 13px 20px;
+                color: #EAC509;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3%;
+
+            }
+
+            input:hover {
+                cursor: pointer;
+                background: #EAC509;
+                color: #1D1D1F;
+                text-decoration: underline;
+            }
+        }
+
+        .retour {
+            font-size: x-large;
+            margin-top: 70px;
+            margin-left: 75px;
+
+            a {
+
+                text-decoration: none;
+                color: #1D1D1F;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .retour_modif {
+        font-size: x-large;
+        margin-top: 70px;
+        margin-left: 50px;
+
+
+        a {
+
+            text-decoration: none;
+            color: #1D1D1F;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// FOOTER
+footer {
+    background-color: #1D1D1F;
+    position: relative;
+    height: 125px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    a {
+        width: 10%;
+        border: 5px solid #EAC509;
+        padding: 20px 20px;
+        color: #EAC509;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3%;
+        margin: 20px;
+    }
+
+    a:hover {
+        background: #EAC509;
+        color: #1D1D1F;
+        text-decoration: underline;
+    }
+}

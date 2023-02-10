@@ -1,0 +1,79 @@
+// HEADER
+header {
+    a.actif {
+        color: #EAC509;
+        text-decoration: underline;
+    }
+}
+
+// MAIN
+main {
+
+    .infos {
+        width: fit-content;
+        position: absolute;
+        left: 9%;
+        top: 180px;
+        font-size: x-large;
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: inherit;
+        }
+
+        h2::after {
+            content: '';
+            width: 68px;
+            height: 2px;
+            background-color: #1D1D1F;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            display: block;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+
+        .telephone {
+            margin-top: 20px;
+        }
+    }
+
+    .heures {
+        width: fit-content;
+        position: absolute;
+        left: 9%;
+        top: 480px;
+        font-size: x-large;
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: inherit;
+        }
+
+        h2::after {
+            content: '';
+            width: 68px;
+            height: 2px;
+            background-color: #1D1D1F;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            display: block;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+    }
+
+
+    .carte {
+        border: 10px solid #EAC509 !important;
+        position: relative;
+        left: 40%;
+        margin-top: 50px;
+    }
+}

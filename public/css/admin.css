@@ -1,0 +1,453 @@
+body {
+  background-color: #EEEEEE;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1D1D1F;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+}
+header h1 {
+  margin: 0;
+  color: #838282;
+  font-weight: inherit;
+  position: relative;
+  left: 5%;
+  bottom: -25%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header a {
+  position: relative;
+  left: 44%;
+  top: -46%;
+}
+
+#app {
+  padding-top: 100px;
+}
+#app .menu_accueil {
+  display: flex;
+  justify-content: center;
+}
+#app .menu_accueil .erreur {
+  position: absolute;
+  z-index: 100;
+  top: 72%;
+  color: #eee;
+}
+#app .menu_accueil .formulaire {
+  width: 930px;
+  height: 500px;
+  position: relative;
+  border: 10px solid #EAC509;
+  display: flex;
+  margin: 60px;
+  background-color: #1D1D1F;
+}
+#app .menu_accueil .formulaire .erreur_conn {
+  position: absolute;
+  z-index: 100;
+  top: 85%;
+  color: #eee;
+  left: 8%;
+}
+#app .menu_accueil .formulaire h2 {
+  margin: 0;
+  color: #EEEEEE;
+  position: relative;
+  top: 21%;
+  left: 22%;
+}
+#app .menu_accueil .formulaire h2::after {
+  content: "";
+  width: 84px;
+  height: 2px;
+  background-color: #EEEEEE;
+  position: absolute;
+  top: 33px;
+  left: 0;
+}
+#app .menu_accueil .formulaire .titre-admin {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 12%;
+  left: 9%;
+}
+#app .menu_accueil .formulaire .form {
+  position: relative;
+  top: 34%;
+  width: 363px;
+  left: 22%;
+}
+#app .menu_accueil .formulaire .form input {
+  padding: 20px 50px 20px 15px;
+  border-radius: inherit;
+  background: rgba(251, 247, 234, 0.2392156863);
+  border: none;
+  color: #aaa9a9;
+}
+#app .menu_accueil .formulaire .form .courriel,
+#app .menu_accueil .formulaire .form .mdp {
+  width: 270px;
+}
+#app .menu_accueil .formulaire .form .mdp {
+  margin-top: 21px;
+}
+#app .menu_accueil .formulaire .form .submit {
+  margin-top: 8px;
+}
+#app .menu_accueil .formulaire .form .submit input {
+  position: relative;
+  top: 20px;
+  background: none;
+  color: #EAC509;
+  border: 3px solid #EAC509;
+  font-size: larger;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+#app .menu_accueil .formulaire .form .submit input:hover {
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#app .menu_accueil .formulaire .liens {
+  position: relative;
+  top: 35%;
+  left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 645px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#app .menu_accueil .formulaire .liens a {
+  width: 30%;
+  border: 5px solid #EAC509;
+  padding: 10px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+  margin: 20px;
+}
+#app .menu_accueil .formulaire .liens a:hover {
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+#app .menu_accueil .formulaire img {
+  position: relative;
+  left: 217px;
+}
+#app #ajout_util {
+  font-size: x-large;
+  height: 70vh;
+  margin-top: 70px;
+}
+#app #ajout_util .form_ajout {
+  margin: 20px;
+}
+#app #ajout_util .form_ajout label {
+  display: block;
+}
+#app #ajout_util .form_ajout label input {
+  width: 220px;
+}
+#app #ajout_util .submit {
+  margin-top: 50px;
+}
+#app #ajout_util .submit input {
+  width: 180px;
+  border: 5px solid #EAC509;
+  padding: 13px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+  margin: 20px;
+}
+#app #ajout_util .submit input:hover {
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#app #ajout_util .retour {
+  margin: 20px;
+}
+#app #ajout_util .retour a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app #ajout_util .retour a:hover {
+  text-decoration: underline;
+}
+#app #modif_util {
+  margin: 20px;
+  font-size: x-large;
+  height: 70vh;
+}
+#app #modif_util .retour {
+  margin-top: 70px;
+}
+#app #modif_util .retour a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app #modif_util .retour a:hover {
+  text-decoration: underline;
+}
+#app #ajout_menu {
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: x-large;
+}
+#app #ajout_menu .form_ajout_menu {
+  display: flex;
+  justify-content: space-around;
+}
+#app #ajout_menu .form_ajout_menu label {
+  display: block;
+}
+#app #ajout_menu .form_ajout_menu label input {
+  width: 220px;
+}
+#app #ajout_menu .form_ajout_menu .submit {
+  margin-top: 50px;
+}
+#app #ajout_menu .form_ajout_menu .submit input {
+  width: 180px;
+  border: 5px solid #EAC509;
+  padding: 13px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+}
+#app #ajout_menu .form_ajout_menu .submit input:hover {
+  cursor: pointer;
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+#app #ajout_menu .retour {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+#app #ajout_menu .retour a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app #ajout_menu .retour a:hover {
+  text-decoration: underline;
+}
+#app #modif_menu {
+  font-size: larger;
+}
+#app #modif_menu .form_modif_menu {
+  display: flex;
+  padding: 65px;
+  justify-content: space-around;
+  align-items: baseline;
+}
+#app #modif_menu .retour {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 75px;
+}
+#app #modif_menu .retour a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app #modif_menu .retour a:hover {
+  text-decoration: underline;
+}
+#app .modif_util_form {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+#app .modif_util_form .form label {
+  display: block;
+}
+#app .modif_util_form .form input {
+  width: 220px;
+}
+#app .modif_util_form .submit {
+  margin-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#app .modif_util_form .submit input {
+  width: 130px;
+  border: 5px solid #EAC509;
+  padding: 13px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+}
+#app .modif_util_form .submit input:hover {
+  cursor: pointer;
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+#app .modif_util_form .retour {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 75px;
+}
+#app .modif_util_form .retour a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app .modif_util_form .retour a:hover {
+  text-decoration: underline;
+}
+#app .modif_cat_form {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+#app .modif_cat_form .form .nom_modif label {
+  display: block;
+}
+#app .modif_cat_form .form .nom_modif input {
+  width: 220px;
+}
+#app .modif_cat_form .submit {
+  margin-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#app .modif_cat_form .submit input {
+  width: 130px;
+  border: 5px solid #EAC509;
+  padding: 13px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+}
+#app .modif_cat_form .submit input:hover {
+  cursor: pointer;
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+#app .modif_plat_form {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+#app .modif_plat_form .form label {
+  display: block;
+}
+#app .modif_plat_form .form input {
+  width: 220px;
+}
+#app .modif_plat_form .submit {
+  margin-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#app .modif_plat_form .submit input {
+  width: 130px;
+  border: 5px solid #EAC509;
+  padding: 13px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+}
+#app .modif_plat_form .submit input:hover {
+  cursor: pointer;
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+}
+#app .modif_plat_form .retour {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 75px;
+}
+#app .modif_plat_form .retour a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app .modif_plat_form .retour a:hover {
+  text-decoration: underline;
+}
+#app .retour_modif {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+#app .retour_modif a {
+  text-decoration: none;
+  color: #1D1D1F;
+}
+#app .retour_modif a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1D1D1F;
+  position: relative;
+  height: 125px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  width: 10%;
+  border: 5px solid #EAC509;
+  padding: 20px 20px;
+  color: #EAC509;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3%;
+  margin: 20px;
+}
+footer a:hover {
+  background: #EAC509;
+  color: #1D1D1F;
+  text-decoration: underline;
+}/*# sourceMappingURL=admin.css.map */

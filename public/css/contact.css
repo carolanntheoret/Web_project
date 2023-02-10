@@ -1,0 +1,68 @@
+header a.actif {
+  color: #EAC509;
+  text-decoration: underline;
+}
+
+main .infos {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 9%;
+  top: 180px;
+  font-size: x-large;
+}
+main .infos h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: inherit;
+}
+main .infos h2::after {
+  content: "";
+  width: 68px;
+  height: 2px;
+  background-color: #1D1D1F;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+main .infos p {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+main .infos .telephone {
+  margin-top: 20px;
+}
+main .heures {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 9%;
+  top: 480px;
+  font-size: x-large;
+}
+main .heures h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: inherit;
+}
+main .heures h2::after {
+  content: "";
+  width: 68px;
+  height: 2px;
+  background-color: #1D1D1F;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+main .heures p {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+main .carte {
+  border: 10px solid #EAC509 !important;
+  position: relative;
+  left: 40%;
+  margin-top: 50px;
+}/*# sourceMappingURL=contact.css.map */

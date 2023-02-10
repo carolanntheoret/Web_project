@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "photo": "data/compte.png",
+        "texte": "Excellent service et de la nourriture absolument délicieuse!",
+        "note": "data/cinq.png"
+    },
+    {
+        "id": 1,
+        "photo": "data/compte.png",
+        "texte": "Pub G4 est ma destination favorite lorsque je veux recevoir des invités. Fiables et toujours une ambiance très agréable.",
+        "note": "data/cinq.png"
+    },
+    {
+        "id": 2,
+        "photo": "data/compte.png",
+        "texte": "Même si les prix ne sont pas les plus bas, Pub G4 est une référence dans la qualité du service et de leur mets. Je recommande!",
+        "note": "data/demi.png"
+    },
+    {
+        "id": 3,
+        "photo": "data/compte.png",
+        "texte": "Woow! Superbe présentation et le meilleur fish & chips que je n’ai jamais mangé!",
+        "note": "data/cinq.png"
+    },
+    {
+        "id": 4,
+        "photo": "data/compte.png",
+        "texte": "Une expérience agréable et un service de qualité, dommage que ce ne soit pas plus proche!",
+        "note": "data/quatre.png"
+    },
+    {
+        "id": 5,
+        "photo": "data/compte.png",
+        "texte": "Si vous commandez à boire, demandez les conseils de Kevin! C’est un expert!",
+        "note": "data/cinq.png"
+    }
+]
